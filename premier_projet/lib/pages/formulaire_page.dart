@@ -127,6 +127,7 @@ class _FormulairePageState extends State<FormulairePage> {
                           'speaker' : profName,
                           'date' : selectedConfDate,
                           'subject': confName,
+                          'type': selectedCategorieHuman,
                           'avatar': 'onePieceFlag'
                         });
                       }
