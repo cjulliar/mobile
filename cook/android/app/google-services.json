@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1031271555902",
+    "project_id": "cook-206ec",
+    "storage_bucket": "cook-206ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031271555902:android:36deeb2c2dc0ec92ed826f",
+        "android_client_info": {
+          "package_name": "com.example.cook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3gn97XNzqMWr1zqiRt7vwS4kYo3Q2904"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

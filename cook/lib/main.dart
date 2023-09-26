@@ -4,8 +4,16 @@ import 'package:cook/pages/liste_de_course_page.dart';
 import 'package:cook/pages/menus_page.dart';
 import 'package:cook/pages/recettes_page.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const MyApp());
 }
 
