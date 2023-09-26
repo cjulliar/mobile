@@ -1,3 +1,4 @@
+import 'package:cook/pages/cellier_page.dart';
 import 'package:cook/pages/home_page.dart';
 import 'package:cook/pages/liste_de_course_page.dart';
 import 'package:cook/pages/menus_page.dart';
@@ -33,7 +34,8 @@ class _MyAppState extends State<MyApp> {
               const Text("Acceuil"),
               const Text("Recettes"),
               const Text("Menus"),
-              const Text("Liste de courses")
+              const Text("Liste de courses"),
+              const Text("Cellier")
             ][_currentIndex]
         ),
         body:  [
@@ -41,6 +43,7 @@ class _MyAppState extends State<MyApp> {
           const RecettesPage(),
           const MenusPage(),
           const ListeDeCoursePage(),
+          const CellierPage(),
         ][_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
@@ -64,6 +67,10 @@ class _MyAppState extends State<MyApp> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.local_grocery_store_outlined),
                 label: "Liste de courses"
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.home_outlined),
+                label: "Cellier"
             )
           ],
         ),
